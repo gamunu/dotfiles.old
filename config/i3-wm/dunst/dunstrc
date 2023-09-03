@@ -53,8 +53,7 @@
 
     # Set the font
     # font = "Noto Sans 11"
-    font = "Hack Nerd Font 11"
-
+    font = "Segoe UI Variable Static Display 10
     # Set line height to font height
     line_height = 0
 

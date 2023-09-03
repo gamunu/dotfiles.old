@@ -27,13 +27,13 @@ sudo pacman -S xorg-server xorg-apps xorg-xinit xdotool qt5ct \
 
 ```bash
 yay -S polybar-scripts-git yad \
-    qogir-icon-theme ttf-ligaconsolas-nerd-font ttf-icomoon-feather ttf-iosevka-nerd ttf-segoe-ui-variable
+    qogir-icon-theme ttf-icomoon-feather ttf-iosevka-nerd ttf-segoe-ui-variable
 ```
 
 ### Install applications
 
 ```bash
-sudo pacman -S spectacle dolphin blueman
+sudo pacman -S spectacle dolphin blueman kmix blueman-manager okular
 ```
 
 ### Copy configuration files

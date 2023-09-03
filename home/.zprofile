@@ -8,4 +8,4 @@ export QT_ENABLE_HIGHDPI_SCALING=0
 export QT_FONT_DPI=144
 export XDG_CURRENT_DESKTOP=KDE
 
-export BROWSER="/usr/bin/google-chrome"
+export BROWSER="/usr/bin/google-chrome-stable"

@@ -10,4 +10,4 @@
 #sed -i -e "s/ac: .*/ac:   ${AC}FF;/g" $FILE
 #sed -i -e "s/se: .*/se:   ${SE}FF;/g" $FILE
 
-rofi -no-config -no-lazy-grab -show drun -modi drun -theme $HOME/.config/rofi/launcher.rasi
+rofi -no-config -no-lazy-grab -dpi 144 -show drun -modi drun -theme $HOME/.config/rofi/launcher.rasi
