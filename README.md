@@ -1,6 +1,52 @@
 # dotfiles
 Repository containing personal and development environment setup dot files
 
+
+## I3-wm
+
+### Install
+
+```bash
+sudo pacman -S zsh i3-wm i3lock rofi dunst ttf-font-awesome alacritty picom \
+    # XDG autostart
+    # https://wiki.archlinux.org/title/XDG_Autostart
+    dex \
+    # Session lock
+    # https://wiki.archlinux.org/title/Session_lock
+    xss-lock \
+    # Install i2c tools for backlight configuration
+    ddcutil i2c-tools \
+    # network manager applet
+    network-manager-applet nm-connection-editor
+```
+
+```bash
+sudo pacman -S xorg-server xorg-apps xorg-xinit xdotool qt5ct \
+    breeze breeze-gtk
+```
+
+```bash
+yay -S polybar-scripts-git yad \
+    qogir-icon-theme ttf-ligaconsolas-nerd-font ttf-icomoon-feather ttf-iosevka-nerd ttf-segoe-ui-variable
+```
+
+### Install applications
+
+```bash
+sudo pacman -S spectacle dolphin blueman
+```
+
+### Copy configuration files
+
+```bash
+mkdir -p ~/scripts ~/images
+cp -r ./config/i3-wm/* ~/.config/
+cp -r ./home/.* ~/
+cp -r ./scripts/* ~/scripts/
+cp -r ./images/* ~/images/
+```
+
+
 ## Sway
 
 ### Displays
@@ -17,13 +63,13 @@ Show available displays: swaymsg -t get_outputs
 Install font-awesome for icons:
 
 ```bash
-sudo pacman -S sway dunst waybar alacritty otf-font-awesome
+sudo pacman -S sway dunst waybar wofi alacritty otf-font-awesome
 ```
 
 ### Copy configuration files
 
 ```bash
-cp -r config/* ~/.config/
+cp -r config/sway-wm/* ~/.config/
 ```
 
 ## fonts
