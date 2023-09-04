@@ -33,7 +33,7 @@ yay -S polybar-scripts-git yad \
 ### Install applications
 
 ```bash
-sudo pacman -S spectacle dolphin blueman kmix blueman-manager okular
+sudo pacman -S spectacle dolphin blueman kmix blueman-manager okular perl-file-mimeinfo
 ```
 
 ### Copy configuration files
