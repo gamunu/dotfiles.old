@@ -1,26 +1,25 @@
 
 configuration {
-	font:							"Segoe UI Variable Static Display 11";
     show-icons:                     true;
 	icon-theme: 					"breeze";
-    display-drun: 					"";
+    display-drun: 					"󱓟 ";
     drun-display-format:            "{name}";
     disable-history:                false;
-    fullscreen:                     false;
-	hide-scrollbar: 				true;
+	hide-scrollbar: 				false;
 	sidebar-mode: 					false;
 }
 
 @import "colors.rasi"
 
 window {
+    font:							"Consolas Nerd Font 11";
     transparency:                   "real";
     background-color:               @bg;
     text-color:                     @fg;
 	border:							0px 0px 0px 0px;
 	border-color:					@ac;
     border-radius:                  0px;
-	width:							500px;
+	width:							600px;
     location:                       center;
     x-offset:                       0;
     y-offset:                       0;
@@ -31,7 +30,6 @@ prompt {
 	padding: 						0px;
 	background-color: 				@bga;
 	text-color: 					@ac;
-	font:							"Segoe UI Variable Static Display 11";
 }
 
 entry {

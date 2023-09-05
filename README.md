@@ -16,8 +16,8 @@ sudo pacman -S zsh i3-wm i3lock rofi dunst ttf-font-awesome alacritty picom \
     xss-lock \
     # Install i2c tools for backlight configuration
     ddcutil i2c-tools \
-    # network manager applet
-    network-manager-applet nm-connection-editor
+    # network manager
+    nm-connection-editor
 ```
 
 ```bash
@@ -27,13 +27,13 @@ sudo pacman -S xorg-server xorg-apps xorg-xinit xdotool qt5ct \
 
 ```bash
 yay -S polybar-scripts-git yad \
-    qogir-icon-theme ttf-icomoon-feather ttf-iosevka-nerd ttf-segoe-ui-variable
+    ttf-segoe-ui-variable
 ```
 
 ### Install applications
 
 ```bash
-sudo pacman -S spectacle dolphin blueman kmix blueman-manager okular perl-file-mimeinfo
+sudo pacman -S spectacle dolphin blueman pavucontrol blueman-manager okular perl-file-mimeinfo
 ```
 
 ### Copy configuration files

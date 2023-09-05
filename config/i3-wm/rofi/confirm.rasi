@@ -3,7 +3,7 @@
 * {
     background-color:       @bg;
     text-color:             @fg;
-	font:				 	"Segoe UI Variable Static Display 10";
+	font:				 	"Consolas Nerd Font 11";
 }
 
 window {

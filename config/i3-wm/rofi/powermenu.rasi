@@ -1,12 +1,10 @@
 
 configuration {
-	font:							"Segoe UI Variable Static Display 11";
     show-icons:                     true;
 	icon-theme: 					"Breeze";
-    display-drun: 					"";
+    display-drun: 					"󰜎";
     drun-display-format:            "{name}";
     disable-history:                false;
-    fullscreen:                     false;
 	hide-scrollbar: 				true;
 	sidebar-mode: 					false;
 }
@@ -14,13 +12,14 @@ configuration {
 @import "colors.rasi"
 
 window {
+	font:							"Consolas Nerd Font 11";
     transparency:                   "real";
     background-color:               @bg;
     text-color:                     @fg;
 	border:							0px 0px 0px 0px;
 	border-color:					@ac;
-    border-radius:                  0px;
-	width:							350px;
+    border-radius:                  3px;
+	width:							400px;
     location:                       center;
     x-offset:                       0;
     y-offset:                       0;
@@ -34,12 +33,11 @@ prompt {
 }
 
 textbox-prompt-colon {
-	padding: 						0px;
+	padding: 						3px;
 	background-color: 				@bga;
 	text-color: 					@ac;
-	expand: false;
-	str: "";
-	font:							"Segoe UI Variable Static Display 11";
+	expand:                         false;
+	str:                            "󰜎 ";
 }
 
 entry {

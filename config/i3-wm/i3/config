@@ -213,11 +213,7 @@ exec_always --no-startup-id polybar-msg cmd quit
 exec_always --no-startup-id polybar -r main &
 
 # Window rules
-for_window [class="Yad" title="yad-calendar"] floating enable
 for_window [instance="spectacle" class="spectacle"] floating enable
-for_window [instance="kmix" class="kmix"] floating enable
-for_window [instance="kmix" class="kmix"] floating enable
-for_window [instance="blueman-manager" class="Blueman-manager"] floating enable
 
 # Gaps settings
 smart_gaps on
