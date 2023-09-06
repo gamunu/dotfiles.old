@@ -14,18 +14,18 @@ logout="󰍃 Logout"
 
 # Confirmation
 confirm_exit() {
-	rofi -dpi 144 \ 
-		-dmenu\
-        -no-config\
-		-i\
-		-no-fixed-num-lines\
-		-p "Are You Sure? : "\
+	rofi -dmenu \
+        -no-config \
+		-dpi 144 \
+		-i \
+		-no-fixed-num-lines \
+		-p "Are You Sure? : " \
 		-theme $dir/confirm.rasi
 }
 
 # Message
 msg() {
-	rofi -dpi 144 -no-config -theme "$dir/message.rasi" -e "Available Options  -  yes / y / no / n"
+	rofi -no-config -dpi 144  -theme "$dir/message.rasi" -e "Available Options  -  yes / y / no / n"
 }
 
 # Variable passed to rofi

@@ -8,6 +8,8 @@ Repository containing personal and development environment setup dot files
 
 ```bash
 sudo pacman -S zsh i3-wm i3lock rofi dunst ttf-font-awesome alacritty picom \
+    # simple greeter for i3-wm (tuigreet is also an option)
+    greetd-agreety \
     # XDG autostart
     # https://wiki.archlinux.org/title/XDG_Autostart
     dex \
@@ -26,8 +28,14 @@ sudo pacman -S xorg-server xorg-apps xorg-xinit xdotool qt5ct \
 ```
 
 ```bash
-yay -S polybar-scripts-git yad \
+yay -S polybar-scripts-git \
     ttf-segoe-ui-variable
+```
+
+### enable greeter
+
+```bash
+sudo systemctl enable greetd
 ```
 
 ### Install applications
