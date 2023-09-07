@@ -1,3 +1,12 @@
+# GPG, editor and language configuration
+#--------------------------------------
+export GPG_TTY=$(tty)
+export EDITOR=vim
+
+# language variables
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -67,14 +76,6 @@ alias l='ls -lah'
 alias ll='ls -lh'
 alias la='ls -lAh'
 
-# GPG, editor and language configuration
-#--------------------------------------
-export GPG_TTY=$(tty)
-export EDITOR=vim
-
-# language variables
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
 
 # Programing and language configuration
 #--------------------------------------
