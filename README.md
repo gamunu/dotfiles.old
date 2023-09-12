@@ -3,13 +3,16 @@
 This repository contains dotfiles for customized i3 based desktop environment. The configuration is based on Arch Linux.
 
 - [dotfiles](#dotfiles)
+    - [Configuring EFI boot](#configuring-efi-boot)
     - [Install](#install)
-      - [Install xserver](#install-xserver)
-      - [Install i3](#install-i3)
+      - [Install Xserver and i3](#install-xserver-and-i3)
     - [enable greeter](#enable-greeter)
     - [Install applications](#install-applications)
     - [Copy configuration files](#copy-configuration-files)
     - [Powerline 10k](#powerline-10k)
+    - [Make it beautiful](#make-it-beautiful)
+      - [Font configuration](#font-configuration)
+      - [enable breeze dark theme](#enable-breeze-dark-theme)
 
 **Why use i3 instead of sway?**
 
@@ -19,17 +22,33 @@ Another inconvenience stems from the use of XDG Portals. The constant permission
 
 Due to these issues, the most reliable alternative at this time is to stick with i3 running on X11.
 
-### Install
+### Configuring EFI boot
 
-#### Install xserver 
+- EFI pattition: /dev/sda1 (FAT32) or /dev/nvme0n1p1 (FAT32)
 
 ```bash
-sudo pacman -S xorg-server xorg-apps xorg-xinit xdotool
+sudo pacman -S efibootmgr
+./aufii.sh
 ```
-#### Install i3
+use generate option to generate boot entry creation script
+
+```bash
+sudo ./UEFI_gen
+```
+verify the boot entry
+
+```bash
+sudo efibootmgr -v
+```
+
+### Install
+
+#### Install Xserver and i3
 
 ```bash
 sudo pacman -S zsh i3-wm i3lock rofi dunst ttf-font-awesome alacritty picom \
+    # install xserver
+    xorg-server xorg-apps xorg-xinit xdotool
     # simple greeter for i3-wm
     ly xorg-xauth libxcb \
     # XDG autostart
@@ -57,7 +76,9 @@ sudo systemctl enable ly
 ### Install applications
 
 ```bash
-sudo pacman -S spectacle dolphin nm-connection-editor blueman pavucontrol blueman-manager okular perl-file-mimeinfo
+sudo pacman -S spectacle dolphin nm-connection-editor blueman pavucontrol blueman-manager \
+    okular perl-file-mimeinfo \
+    lxappearance
 ```
 
 ### Copy configuration files
@@ -73,4 +94,24 @@ cp -r ./images/* ~/images/
 
 ```bash
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
+```
+
+### Make it beautiful
+
+#### Font configuration
+
+```bash
+mkdir -p $HOME/.config/fontconfig/conf.d
+
+# Enable font slight hinting
+ln -s /usr/share/fontconfig/conf.avail/10-hinting-slight.conf $HOME/.config/fontconfig/conf.d
+```
+
+#### enable breeze dark theme
+
+1. Select Breeze Dark icon theme in qt5ct
+2. Run the following command to enable breeze dark theme for applications
+
+```bash
+cp /usr/share/color-schemes/BreezeDark.colors ~/.config/kdeglobals
 ```
