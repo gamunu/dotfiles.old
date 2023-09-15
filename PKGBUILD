@@ -1,11 +1,12 @@
-pkgname=gamunu-dotfiles
+pkgname=gamunu-dotfiles-git
+_pkgname=${pkgname%-git}
 pkgver=0.0.1
 pkgrel=1
 pkgdesc="My dotfiles"
 arch=('any')
 url="https://github.com/gamunu/dotfiles"
 license=('MIT')
-source=()
+source=("git+https://github.com/gamunu/dotfiles.git")
 depends=('git'
          'efibootmgr'
          'zsh'
@@ -38,8 +39,13 @@ depends=('git'
          'perl-file-mimeinfo'
          'lxappearance')
 
+pkgver() {
+  cd "$srcdir/$_reponame"
+  printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+
 package() {
-  #cd "$srcdir"
-  cd "$startdir" # here you go
-  #make install
+  cd "$srcdir/$_reponame"
+
+  make install
 }
