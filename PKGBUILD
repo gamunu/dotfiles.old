@@ -1,11 +1,13 @@
 pkgname=gamunu-dotfiles-git
+_reponame=dotfiles
 _pkgname=${pkgname%-git}
-pkgver=0.0.1
+pkgver=r17.78fed12
 pkgrel=1
 pkgdesc="My dotfiles"
 arch=('any')
 url="https://github.com/gamunu/dotfiles"
 license=('MIT')
+sha256sums=('SKIP')
 source=("git+https://github.com/gamunu/dotfiles.git")
 depends=('git'
          'efibootmgr'
