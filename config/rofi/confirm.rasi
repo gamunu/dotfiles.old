@@ -3,7 +3,7 @@
 * {
     background-color:       @bg;
     text-color:             @fg;
-	font:				 	"Consolas Nerd Font 11";
+	font:				 	"Ubuntu Nerd Font 11";
 }
 
 window {

@@ -12,7 +12,7 @@ configuration {
 @import "colors.rasi"
 
 window {
-	font:							"Consolas Nerd Font 11";
+	font:							"Ubuntu Nerd Font 11";
     transparency:                   "real";
     background-color:               @bg;
     text-color:                     @fg;

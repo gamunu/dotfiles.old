@@ -3,11 +3,9 @@
 This repository contains dotfiles for customized i3 based desktop environment. The configuration is based on Arch Linux.
 
 - [dotfiles](#dotfiles)
-    - [Configuring EFI boot](#configuring-efi-boot)
     - [Install](#install)
       - [Install Xserver and i3](#install-xserver-and-i3)
     - [enable greeter](#enable-greeter)
-    - [Install applications](#install-applications)
     - [Copy configuration files](#copy-configuration-files)
     - [Powerline 10k](#powerline-10k)
     - [Make it beautiful](#make-it-beautiful)
@@ -22,24 +20,6 @@ Another inconvenience stems from the use of XDG Portals. The constant permission
 
 Due to these issues, the most reliable alternative at this time is to stick with i3 running on X11.
 
-### Configuring EFI boot
-
-- EFI pattition: /dev/sda1 (FAT32) or /dev/nvme0n1p1 (FAT32)
-
-```bash
-sudo pacman -S efibootmgr
-./aufii.sh
-```
-use generate option to generate boot entry creation script
-
-```bash
-sudo ./UEFI_gen
-```
-verify the boot entry
-
-```bash
-sudo efibootmgr -v
-```
 
 ### Install
 
@@ -60,25 +40,23 @@ sudo pacman -S zsh i3-wm i3lock rofi dunst ttf-font-awesome alacritty picom \
     # Install i2c tools for backlight configuration
     ddcutil i2c-tools \
     # theme and icons
-    qt5ct breeze breeze-gtk
+    qt5ct breeze breeze-gtk \
+    # Install fonts
+    ttf-ubuntu-font-family ttf-ubuntu-mono-nerd ttf-ubuntu-nerd \
+    # install applications
+    spectacle dolphin nm-connection-editor blueman pavucontrol blueman-manager \
+    okular perl-file-mimeinfo \
+    lxappearance
 ```
 
 ```bash
-yay -S polybar-scripts-git ttf-segoe-ui-variable
+yay -S polybar-scripts-git polybar-git
 ```
 
 ### enable greeter
 
 ```bash
 sudo systemctl enable ly
-```
-
-### Install applications
-
-```bash
-sudo pacman -S spectacle dolphin nm-connection-editor blueman pavucontrol blueman-manager \
-    okular perl-file-mimeinfo \
-    lxappearance
 ```
 
 ### Copy configuration files
