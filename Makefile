@@ -32,3 +32,7 @@ config:
 		cp -r $$C_SRC $(HOME)/.config/; \
 	done
 	@echo "Done!"
+	@echo "configure font"
+	mkdir -p $HOME/.config/fontconfig/conf.d
+	ln -s /usr/share/fontconfig/conf.avail/10-hinting-slight.conf $HOME/.config/fontconfig/conf.d
+	cp /usr/share/color-schemes/BreezeDark.colors ~/.config/kdeglobals
