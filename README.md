@@ -41,8 +41,6 @@ sudo pacman -S zsh i3-wm i3lock rofi dunst ttf-font-awesome alacritty picom \
     ddcutil i2c-tools \
     # theme and icons
     qt5ct breeze breeze-gtk \
-    # Install fonts
-    ttf-ubuntu-font-family ttf-ubuntu-mono-nerd ttf-ubuntu-nerd \
     # install applications
     spectacle dolphin nm-connection-editor blueman pavucontrol blueman-manager \
     okular perl-file-mimeinfo \
@@ -53,7 +51,7 @@ sudo pacman -S zsh i3-wm i3lock rofi dunst ttf-font-awesome alacritty picom \
 ```
 
 ```bash
-yay -S polybar-scripts-git polybar-git
+yay -S polybar-scripts-git polybar-git ttf-segoe-ui-variable ttf-nerd-fonts-symbols-mono
 ```
 
 ### enable greeter

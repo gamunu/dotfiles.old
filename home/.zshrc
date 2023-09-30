@@ -58,7 +58,7 @@ LS_COLORS='rs=0:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;3
 export LS_COLORS
 
 # ls customizations
-alias ls='ls --color -G'
+alias ls='exa --color auto -G'
 #alias ls='ls -G'
 # List directory contents
 alias lsa='ls -lah'
