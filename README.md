@@ -46,7 +46,10 @@ sudo pacman -S zsh i3-wm i3lock rofi dunst ttf-font-awesome alacritty picom \
     # install applications
     spectacle dolphin nm-connection-editor blueman pavucontrol blueman-manager \
     okular perl-file-mimeinfo \
-    lxappearance
+    # install lxappearance for gtk theme
+    lxappearance \
+    # install starship prompt and tools
+    starship exa
 ```
 
 ```bash
