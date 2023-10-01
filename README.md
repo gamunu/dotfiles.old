@@ -7,7 +7,6 @@ This repository contains dotfiles for customized i3 based desktop environment. T
       - [Install Xserver and i3](#install-xserver-and-i3)
     - [enable greeter](#enable-greeter)
     - [Copy configuration files](#copy-configuration-files)
-    - [Powerline 10k](#powerline-10k)
     - [Make it beautiful](#make-it-beautiful)
       - [Font configuration](#font-configuration)
       - [enable breeze dark theme](#enable-breeze-dark-theme)
@@ -69,12 +68,6 @@ mkdir -p ~/images
 cp -r ./config/* ~/.config/
 cp -r ./home/.* ~/
 cp -r ./images/* ~/images/
-```
-
-### Powerline 10k
-
-```bash
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
 ```
 
 ### Make it beautiful
