@@ -12,14 +12,14 @@ configuration {
 @import "colors.rasi"
 
 window {
-	font:							"Consolas Nerd Font 11";
+	font:							"Consolas Nerd Font 22";
     transparency:                   "real";
     background-color:               @bg;
     text-color:                     @fg;
 	border:							0px 0px 0px 0px;
 	border-color:					@ac;
-    border-radius:                  3px;
-	width:							400px;
+    border-radius:                  6px;
+	width:							15%;
     location:                       center;
     x-offset:                       0;
     y-offset:                       0;
@@ -95,7 +95,7 @@ element {
 element-icon {
     background-color:               transparent;
     text-color:               		inherit;
-    size:                           32px;
+    size:                           42px;
     border:                         0px;
 }
 

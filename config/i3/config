@@ -208,7 +208,7 @@ bindsym $mod+r mode "resize"
 # setup clipboard manager
 # clipboard tool
 exec --no-startup-id greenclip daemon>/dev/null
-bindsym $mod+c exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard
+bindsym $mod+c exec --no-startup-id rofi -dpi 144 -modi "clipboard:greenclip print" -show clipboard -theme $HOME/.config/rofi/clipboard.rasi
 
 # Start notification daemon
 

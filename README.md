@@ -59,7 +59,7 @@ yay -S polybar-scripts-git polybar-git ttf-segoe-ui-variable ttf-nerd-fonts-symb
 ### enable greeter
 
 ```bash
-sudo systemctl enable ly
+sudo systemctl enable ly greenclip
 ```
 
 ### Copy configuration files
