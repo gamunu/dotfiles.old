@@ -45,9 +45,9 @@ sudo pacman -S zsh i3-wm feh i3lock rofi dunst ttf-font-awesome alacritty picom 
     # theme and icons and install lxappearance for gtk theme
     qt5ct breeze breeze-gtk lxappearance \
     # install starship prompt and tools
-    starship exa \
+    starship exa bat \
     # documenations
-    tldr
+    tldr 
 ```
 
 ```bash
