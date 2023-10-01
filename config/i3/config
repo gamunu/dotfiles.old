@@ -205,6 +205,11 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# setup clipboard manager
+# clipboard tool
+exec --no-startup-id greenclip daemon>/dev/null
+bindsym $mod+c exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard
+
 # Start notification daemon
 
 # Startup daemons for compositor and status bar

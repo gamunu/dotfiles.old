@@ -39,13 +39,11 @@ sudo pacman -S zsh i3-wm feh i3lock rofi dunst ttf-font-awesome alacritty picom 
     xss-lock \
     # Install i2c tools for backlight configuration
     ddcutil i2c-tools \
-    # theme and icons
-    qt5ct breeze breeze-gtk \
     # install applications
     spectacle dolphin nm-connection-editor blueman pavucontrol blueman-manager \
     okular perl-file-mimeinfo \
-    # install lxappearance for gtk theme
-    lxappearance \
+    # theme and icons and install lxappearance for gtk theme
+    qt5ct breeze breeze-gtk lxappearance \
     # install starship prompt and tools
     starship exa \
     # documenations
@@ -53,7 +51,9 @@ sudo pacman -S zsh i3-wm feh i3lock rofi dunst ttf-font-awesome alacritty picom 
 ```
 
 ```bash
-yay -S polybar-scripts-git polybar-git ttf-segoe-ui-variable ttf-nerd-fonts-symbols-mono
+yay -S polybar-scripts-git polybar-git ttf-segoe-ui-variable ttf-nerd-fonts-symbols-mono \
+    # install greenclip for clipboard management
+    rofi-greenclip
 ```
 
 ### enable greeter
