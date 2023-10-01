@@ -19,7 +19,6 @@ install: config home
 # copy home files to home
 home:
 	@echo "Copying home files..."
-	cp -r home/.p10k.zsh $(HOME)/
 	cp -r home/.zshrc $(HOME)/
 	cp -r home/.zprofile $(HOME)/
 	cp -r home/.Xresources $(HOME)/
