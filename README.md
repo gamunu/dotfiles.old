@@ -25,7 +25,7 @@ Due to these issues, the most reliable alternative at this time is to stick with
 #### Install Xserver and i3
 
 ```bash
-sudo pacman -S zsh i3-wm feh i3lock rofi dunst ttf-font-awesome alacritty picom \
+sudo pacman -S zsh neovim i3-wm feh i3lock rofi dunst ttf-font-awesome alacritty picom \
     # install xserver
     xorg-server xorg-apps xorg-xinit xdotool
     # simple greeter for i3-wm

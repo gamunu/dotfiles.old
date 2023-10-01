@@ -1,7 +1,7 @@
 # GPG, editor and language configuration
 #--------------------------------------
 export GPG_TTY=$(tty)
-export EDITOR=vim
+export EDITOR=nvim
 
 # language variables
 export LC_ALL=en_US.UTF-8
