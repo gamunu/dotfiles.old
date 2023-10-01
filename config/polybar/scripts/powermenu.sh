@@ -25,7 +25,7 @@ confirm_exit() {
 
 # Message
 msg() {
-	rofi -no-config -dpi 144  -theme "$dir/message.rasi" -e "Available Options  -  yes / y / no / n"
+	rofi -no-config -dpi 144 -theme "$dir/message.rasi" -e "Available Options  -  yes / y / no / n"
 }
 
 # Variable passed to rofi

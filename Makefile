@@ -32,7 +32,16 @@ config:
 		cp -r $$C_SRC $(HOME)/.config/; \
 	done
 	@echo "Done!"
+# configure font rendering
 	@echo "configure font"
-	mkdir -p $(HOME)/.config/fontconfig/conf.d
-	ln -s /usr/share/fontconfig/conf.avail/10-hinting-slight.conf $(HOME)/.config/fontconfig/conf.d
-	cp /usr/share/color-schemes/BreezeDark.colors ~/.config/kdeglobals
+	@mkdir -p $(HOME)/.config/fontconfig/conf.d
+	@ln -s /usr/share/fontconfig/conf.avail/10-hinting-slight.conf $(HOME)/.config/fontconfig/conf.d
+# setup color scheme
+	@cp /usr/share/color-schemes/BreezeDark.colors ~/.config/kdeglobals
+
+
+wallpaper:
+	@echo "Copying wallpaper..."
+	@mkdir -p $(HOME)/.wallpapers
+	@cp -r wallpapers/* $(HOME)/.wallpapers/
+	@echo "Done!"
