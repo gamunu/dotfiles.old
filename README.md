@@ -25,7 +25,8 @@ Due to these issues, the most reliable alternative at this time is to stick with
 #### Install Xserver and i3
 
 ```bash
-sudo pacman -S zsh neovim i3-wm feh i3lock rofi dunst ttf-font-awesome alacritty picom \
+sudo pacman -S zsh neovim i3-wm feh i3lock rofi dunst ttf-font-awesome alacritty \
+    # picom disabled for aur fork
     # install xserver
     xorg-server xorg-apps xorg-xinit xdotool
     # simple greeter for i3-wm
@@ -52,7 +53,7 @@ sudo pacman -S zsh neovim i3-wm feh i3lock rofi dunst ttf-font-awesome alacritty
 ```bash
 yay -S polybar-scripts-git polybar-git ttf-segoe-ui-variable ttf-nerd-fonts-symbols-mono \
     # install greenclip for clipboard management
-    rofi-greenclip
+    rofi-greenclip picom-ftlabs-git
 ```
 
 ### enable greeter
