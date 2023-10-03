@@ -65,10 +65,9 @@ sudo systemctl enable ly greenclip
 ### Copy configuration files
 
 ```bash
-mkdir -p ~/images
-cp -r ./config/* ~/.config/
-cp -r ./home/.* ~/
-cp -r ./images/* ~/images/
+cp -r dotfiles/.config ~/
+cp -r dotfiles/.wallpapers ~/
+cp -r dotfiles/.* ~/
 ```
 
 ### Make it beautiful
